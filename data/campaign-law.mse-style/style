@@ -1,0 +1,47 @@
+﻿mse version: 0.3.8
+game: campaign
+short name: Law
+full name: campaign
+icon: card-sample.png
+position hint: 002
+
+version: 2010-01-28
+depends on: campaign.mse-game 2010-01-28
+
+#card background: white
+card width: 2000
+card height: 2800
+card dpi: 800
+
+
+card style:
+	name:
+		left:	200
+		top:	100
+		width:	1800
+		height:	200
+		z index: -1
+		alignment: left middle
+		padding bottom: 0
+		font:
+			name: Arial
+			size: 120
+			color: 
+				script: rgb(0,0,0)
+¨
+extra card field:
+	type:				choice
+	name:				bg
+	editable:			false
+	save value:			false
+	choice:				dummy choice
+
+extra card style:
+	bg:
+		left:			0
+		top:			0
+		width:			2000
+		height:			2800
+		z index:		-2
+		render style:	image
+		image:			law.png
