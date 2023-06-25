@@ -1,0 +1,193 @@
+﻿mse version: 0.3.8
+game: campaign
+short name: campaign
+full name: campaign
+icon: card-sample.png
+position hint: 001
+installer group: campaign/normal cards
+
+version: 2010-01-28
+depends on: campaign.mse-game 2010-01-28
+
+#card background: white
+card width: 2000
+card height: 2800
+card dpi: 800
+
+##### Scripts
+
+
+card style:
+	############################# Background stuff
+	card type:
+		left:	0
+		top:	0
+		width:	2000
+		height:	2800
+		z index: -2
+		render style: image
+		popup style: in place
+		choice images:
+			voter:			voter.png
+			politician:		card-thing.png
+			law:			card-general.png
+
+	name:
+		left:	200
+		top:	1800
+		width:	1600
+		height:	200
+		z index: -1
+		alignment: center middle
+		padding bottom: 0
+		font:
+			name: Arial
+			size: 120
+			color: 
+				script: rgb(0,0,0)
+
+####################### Extra Card Field Definitions
+
+####################### Extra Card Field Looks
+
+####################### Extra Card Field Definitions
+
+extra card field:
+	type: choice
+	name: align1
+	choice: donut
+	choice: parent
+	choice: pensioneer
+	choice: xenophobe
+	choice: orthodox
+	choice: marxist
+	choice: unemployed
+	choice: ya
+	choice: libertarian
+	choice: worker
+	choice: entrepreneur
+	choice: patriot
+	default: "donut"
+
+extra card field:
+	type: choice
+	name: align2
+	choice: donut
+	choice: parent
+	choice: pensioneer
+	choice: xenophobe
+	choice: orthodox
+	choice: marxist
+	choice: unemployed
+	choice: ya
+	choice: libertarian
+	choice: worker
+	choice: entrepreneur
+	choice: patriot
+	default: "donut"
+
+extra card field:
+	type: choice
+	name: align3
+	choice: donut
+	choice: parent
+	choice: pensioneer
+	choice: xenophobe
+	choice: orthodox
+	choice: marxist
+	choice: unemployed
+	choice: ya
+	choice: libertarian
+	choice: worker
+	choice: entrepreneur
+	choice: patriot
+	default: "donut"
+
+extra card field:
+	type: image
+	name: profile
+
+
+####################### Extra Card Field Looks
+
+extra card style:
+	align1:
+		left:		200
+		width:		400
+		top:		2200
+		height:		400
+		z index:	1
+		visible:	true
+		render style: image
+		popup style: in place
+		choice images:
+			donut: donut.png
+			parent:	parent.png
+			pensioneer:	pensioneer.png
+			xenophobe: xenophobe.png
+			orthodox: orthodox.png
+			marxist: marxist.png
+			unemployed: unemployed.png
+			ya: ya.png
+			libertarian: libertarian.png
+			worker: worker.png
+			entrepreneur: entrepreneur.png
+			patriot: patriot.png
+
+extra card style:
+	align2:
+		left:		800
+		width:		400
+		top:		2200
+		height:		400
+		z index:	2
+		visible:	true
+		render style: image
+		popup style: in place
+		choice images:
+			donut: donut.png
+			parent:	parent.png
+			pensioneer:	pensioneer.png
+			xenophobe: xenophobe.png
+			orthodox: orthodox.png
+			marxist: marxist.png
+			unemployed: unemployed.png
+			ya: ya.png
+			libertarian: libertarian.png
+			worker: worker.png
+			entrepreneur: entrepreneur.png
+			patriot: patriot.png
+
+extra card style:
+	align3:
+		left:		1400
+		width:		400
+		top:		2200
+		height:		400
+		z index:	3
+		visible:	true
+		render style: image
+		popup style: in place
+		choice images:
+			donut: donut.png
+			parent:	parent.png
+			pensioneer:	pensioneer.png
+			xenophobe: xenophobe.png
+			orthodox: orthodox.png
+			marxist: marxist.png
+			unemployed: unemployed.png
+			ya: ya.png
+			libertarian: libertarian.png
+			worker: worker.png
+			entrepreneur: entrepreneur.png
+			patriot: patriot.png
+
+extra card style:
+	profile:
+		left:		200
+		width:		1600
+		top:		200
+		height:		1600
+		z index:	4
+		visible:	true
+		default:	smiley-face-image.png

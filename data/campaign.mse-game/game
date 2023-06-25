@@ -1,0 +1,74 @@
+﻿mse version: 0.3.8
+short name: campaign
+full name: campaign
+icon: card-back.png
+position hint: 100
+
+version: 2010-06-06
+##### Scripts
+
+#init script: 
+#	real_to_real := to_real
+#	to_real := { if match(input, match:"[-+]?[0-9]*[.]?[0-9]+") == true then real_to_real() else 0 }
+#	card_type := {"monster"}
+#	card_supertype := {"door"}
+	
+##### Set fields
+
+set field:
+	type: info
+	name: Set Information
+set field:
+	type: text
+	name: title
+	identifying: true
+set field:
+	type: text
+	name: description
+	multi line: true
+
+##### Card fields
+
+##### Background Fields
+card field:
+	type: color
+	name: border color
+	default: rgb(10,10,10)
+	show statistics: false
+	description: The border of the card; can be any solid color.
+	
+##### Generic Fields
+card field:
+	type: text
+	name: name
+	description: The name of the card
+	identifying: true
+	multi line: true
+	show statistics: false
+	card list visible: true
+	card list column: 1
+	card list alignment: right
+	card list width: 50
+	card list name: Name
+card field:
+	type: text
+	name: details
+	description: The rules on the card
+	multi line: true
+	show statistics: false
+card field:
+	type: image
+	name: image
+	show statistics: false
+	description: The cards art
+card field:
+	type: choice
+	name: card type
+	description: The type of card
+	choice: voter
+	choice: politician
+	choice: law
+	default: "voter"
+#	script:
+#		stylesheet   # indicate that this value should be updated when the stylesheet changes
+#		card_type() # determined by the style
